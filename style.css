@@ -1,0 +1,417 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+    background-color: fff;
+}
+
+.home-container{
+    display: flex;
+}
+
+.foto-home img{
+    width: 600px;
+    margin-top: 100px;
+    margin-left: 250px;
+    z-index: -1;
+}
+
+.foto-home {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Move the image behind other content */
+    margin-left: 600px;
+  }
+
+.container-navbar {
+    width: 100%;
+    position: fixed;
+    padding: 20px;
+    z-index: 1000;
+    background-color: #fff;
+}
+
+.ul-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 450px;
+}
+
+.li-navbar {
+    list-style: none;
+    display: flex;
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: flex;
+    font-size: 15px;
+    transition: font-weight 0.3s ease;
+}
+
+li a:hover {
+    font-weight: bold;
+}
+
+
+.logo{
+    padding-right: 300px;
+    font-size: 30px;
+}
+
+.logo img{
+    width: 100px;
+}
+
+.judul{
+    margin-left: 50px;
+    position: relative;
+    top: 100px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 20;
+}
+
+.ket{
+    color: rgb(0, 0, 0);
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.btn:hover {
+    background-color: #333;
+}
+
+.judul{
+    font-size: 30px;
+    padding-top: 130px;
+    text-align: left;
+}
+
+
+
+.talk-button{
+    background-color: rgb(205, 85, 205);
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 8px;
+}
+
+.talk-button img{
+    width: 20px;
+    filter: invert(99%) sepia(45%) saturate(89%) hue-rotate(132deg) brightness(120%) contrast(100%);
+}
+
+.portfolio-button{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    margin-left: 20px;
+}
+
+.portfolio-button img{
+    width: 20px;
+}
+
+.footer {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  padding-top: 70px;
+}
+
+.sosmed{
+    font-size: 20px;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.ig img{
+    width: 35px;
+    margin-left: 10px;
+    background-color: #cdcdcd;
+    padding: 10px;
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ABOUT */
+.judul-about{
+    position: relative;
+    top: 140px;
+    text-align: center;
+    font-size:  0px;
+}
+.content{
+    display: flex;
+    margin-top: 90px;
+}
+
+.foto{
+    width: 500px;
+    margin-left: 20px;
+}
+
+.narasi{
+    margin-top: 110px;
+    text-align: justify;
+    margin-right: 40px;
+    margin-left: 30px;
+}
+
+.footer-about{
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* PORTFOLIO */
+.porto-container{
+    position: relative;
+    top: 100px;
+}
+.judul-porto {
+    color: black;
+    text-align: center;
+    font-size: 36px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    justify-content: center; /* Center the grid items */
+    align-items: center; /* Center the grid items vertically */
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* Maintain aspect ratio */
+    transition: 0.3s ease;
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 0 0 8px 8px;
+    opacity: 0; /* Initially invisible */
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .caption {
+    opacity: 1; /* Fade in the caption on hover */
+}
+
+.gallery-item:hover img{
+    transform: scale(1.05);
+}
+
+.judul-porto p {
+    color: #000000;
+    text-align: center;
+    font-size: 18px;
+}
+
+.footer-porto{
+    text-align: center;
+}
+
+/* Skills */
+.skill-container{
+    position: relative;
+    top: 130px;
+}
+.judul-skills{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.judul-skills h3{
+    margin-top: 40px;
+}
+
+.skill{
+    justify-content: center;
+    align-items: center;
+    display: grid;
+}
+
+.skill-list img{
+    width: 150px;
+    margin-left: 10px;
+}
+
+.skill-list{
+    display: flex;
+    border: #000000;
+    border-style: solid;
+    max-width: 600px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 25px;
+    margin-bottom: 40px;
+}
+
+.skill-desc{
+    margin-top: 35px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.footer-skill{
+    text-align: center;
+}
+
+/* contact */
+.email img {
+    width: 100%; /* Set the width to 100% to make sure it's responsive */
+    max-width: 500px; /* Set a maximum width if needed */
+    margin-right: 160px;
+    margin-left: 70px;
+}
+
+.contact-container {
+    padding: 20px;
+    border-radius: 5px;
+    color: black;
+    display: flex;
+    align-items: center; /* Center the content vertically within the .contact-container */
+    position: relative;
+    top: 150px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+.contact-judul {
+    text-align: center; /* Center the text horizontally */
+    margin-left: 200px;
+    margin-bottom: 30px;
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: rgb(0, 0, 0);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 150%;
+    padding: 10px;
+    border: 1px solid rgb(239, 238, 238);
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: rgb(239, 238, 238);
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+}
+
+button {
+    background-color: rgb(205, 85, 205);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.contact-container2{
+    margin-top: 130px;
+}
+.contact-content2 {
+    display: flex;
+    align-items: center;
+}
+
+.contact-content2 img {
+    width: 50px;
+    margin-left: 20px;
+}
+
+.contact-content2 p{
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.footer-contact{
+    text-align: center;
+}
+
+@media screen and (max-width: 400px){
+    .judul{
+        font-size: 15px;
+        margin: 0;
+        padding: 0;
+        padding-top: 100px;
+        padding-left: 20px;
+    }
+
+    .judul p {
+        font-size: 20px;
+    }
+
+    .container-home{
+        display: none;
+    }
+}
